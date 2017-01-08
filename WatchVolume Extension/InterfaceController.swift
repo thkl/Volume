@@ -42,6 +42,7 @@ class InterfaceController: WKInterfaceController , WCSessionDelegate {
     pickerGroup.setBackgroundImage(progressImages)
     
     volumePicker.setCoordinatedAnimations([pickerGroup])
+    self.setTitle("iPhone Volume")
   }
   
   override func willActivate() {
@@ -56,10 +57,12 @@ class InterfaceController: WKInterfaceController , WCSessionDelegate {
   
   override func didAppear() {
     super.didAppear()
-    if WCSession.isSupported() {
-      session = WCSession.default()
-      session.delegate = self
-      session.activate()
+    if (session == nil) {
+      if WCSession.isSupported() {
+        session = WCSession.default()
+        session.delegate = self
+        session.activate()
+      }
     }
   }
   

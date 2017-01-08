@@ -468,6 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.ksquare.Volume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -481,6 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.ksquare.Volume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -573,6 +575,7 @@
 				E9FBAC2E1E223B19009C7303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9FBAC7A1E223BCE009C7303 /* Build configuration list for PBXNativeTarget "WatchVolume Extension" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +584,7 @@
 				E9FBAC7C1E223BCE009C7303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9FBAC7E1E223BCE009C7303 /* Build configuration list for PBXNativeTarget "WatchVolume" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +593,7 @@
 				E9FBAC801E223BCE009C7303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
