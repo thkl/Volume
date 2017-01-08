@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--MainInterface-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainInterface" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchVolume_Extension">
+                    <items>
+                        <group width="125" height="125" alignment="center" verticalAlignment="center" id="aCs-W0-rXE">
+                            <items>
+                                <picker width="60" height="60" alignment="center" verticalAlignment="center" id="gHJ-r0-TH8">
+                                    <connections>
+                                        <action selector="volumePickerDidChange:" destination="AgC-eL-Hgc" id="Bul-0a-GdO"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="pickerGroup" destination="aCs-W0-rXE" id="FRY-2T-jSM"/>
+                        <outlet property="volumePicker" destination="gHJ-r0-TH8" id="ei4-qW-mA3"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
